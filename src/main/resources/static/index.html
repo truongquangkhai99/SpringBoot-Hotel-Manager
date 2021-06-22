@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
+
+        <link rel = "stylesheet" href = "style.css"> 
+        <title>jQuery test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consumer.js"></script>
+        <meta http-equiv="Content-Type" content = "text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "row align-items-center justify-content-center">
+                <div class = "col-9">
+                    <h1 class = "text-center">Welcome to the Hotel Room Application!</h1>
+                    <!-- <button type = "button" class = "add-room btn btn-success">Add Room</button> -->
+                    <form>
+                        <div class = "form-group">
+                            <label for = "room-num">Room Number</label>
+                            <input type = "number" class = "form-control" name = "roomNum" required> 
+                        </div>
+                        <div class = "form-group">
+                            <label for = "nightly-price">Nightly Price</label>
+                            <input type = "number" class = "form-control" name = "nightlyPrice" required> 
+                        </div>
+                        <div class = "form-group">
+                            <label for = "type-drop">Select Type of Room</label>
+                            <select class = "form-control" name = "type">
+                                <option>Luxury</option>
+                                <option>Single</option>
+                                <option>Family</option>
+                            </select>
+                        </div>
+                        <div class = "form-check">
+                            <input type = "checkbox" class = "form-check-input" name = "availability">
+                            <label class = "form-check-label">Available?</label>
+                        </div>
+                        <br>
+                        <div class = "text-center">
+                            <button type = "submit" class = "add-btn btn btn-success">Add Room</button>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+                 
+            <table class = "table table-bordered table-hover">
+                    
+                <thead class = "thead-dark">
+                    <th scope = "col">Room #</th>
+                    <th scope = "col">Price Per Night</th>
+                    <th scope = "col">Room Type</th>
+                    <th scope = "col">Availability</th>
+                    <th  scope = "col"></th>
+                </thead>
+                <tbody class = "room-entries"></tbody>
+                
+            </table>  
+            
+
+        </div>
+        
+        <!-- Bootstrap required JS components. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
